@@ -1,0 +1,131 @@
+.main-page-rounded-btn {
+  min-width: 157px;
+  padding: 8px 40px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.main-page-rounded-btn--white {
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+}
+
+.main-page-rounded-btn--blue {
+  background-color: transparent;
+  border: 2px solid #1A72E7;
+  color: #1A72E7;
+}
+
+.about-us__feature button.slick-prev.slick-arrow {
+  background: #FFFFFF;
+  border: 1px solid #C7D7E1;
+  border-radius: 40px;
+  transform: rotate(180deg);
+  width: 60px;
+  height: 60px;
+  z-index: 1;
+  top: calc(50% - 50px);
+}
+
+.about-us__feature button.slick-next.slick-arrow {
+  width: 60px;
+  height: 60px;
+  background: #FFFFFF;
+  border: 1px solid #C7D7E1;
+  border-radius: 40px;
+  transform: rotate(180deg);
+  top: calc(50% - 50px);
+}
+
+.slick-prev::before {
+  content: url('//img.echosting.cafe24.com/api/partner/front/images/about-us-icons/sliderNextIcon.svg') !important;
+  width: 5px;
+  height: 10px;
+  line-height: 0 !important;
+}
+
+.slick-next::before {
+  content: url('//img.echosting.cafe24.com/api/partner/front/images/about-us-icons/sliderPrevIcon.svg') !important;
+  width: 5px;
+  height: 10px;
+  line-height: 0 !important;
+}
+
+.slick-prev {
+  left: 0 !important;
+}
+
+.buttons__registration {
+  background: #1A72E7;
+  border: 2px solid #1A72E7;
+  border-radius: 50px;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #FFFFFF;
+  padding: 8px 42px;
+  margin-right: 10px;
+  font-weight: 700;
+}
+
+.customize-content__buttons .buttons__btn-reg {
+  background: #1A72E7;
+  border: 2px solid #1A72E7;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.2px;
+  color: #FFFFFF;
+  padding: 8px 42px;
+  margin-right: 10px;
+}
+
+/* pc only */
+@media (min-width: 1281px) {
+  .main-page-rounded-btn--white:hover {
+    background-color: #FFFFFF;
+    color: #1B1E26;
+  }
+
+  .main-page-rounded-btn--blue:hover {
+    color: #FFFFFF;
+    background-color: #1A72E7;
+  }
+}
+
+/* tablet & mobile */
+@media (max-width: 1280px) {
+  .main-page-rounded-btn {
+    min-width: auto;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 7px 22px;
+  }
+
+  .main-page-rounded-btn--m-top {
+    margin-top: 16px;
+  }
+
+  .buttons__registration {
+    font-size: 14px;
+    padding: 7px 22px;
+  }
+
+  .customize-content__buttons .buttons__btn-reg {
+    font-size: 14px;
+    padding: 7px 22px;
+    line-height: 14px;
+  }
+}
+

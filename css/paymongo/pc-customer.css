@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #EFEFEF;
+  width: 100%;
+  height: 100%;
+}
+
+#pg-paymongo-buyer {
+  width: 100%;
+  max-width: 1140px;
+  height: 111%;
+  margin: 0 auto;
+  background: #FFFFFF;
+}
+
+.buyer__header {
+  display: flex;
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 56px;
+}
+
+.header-text {
+  text-align: center;
+  font-weight: bold;
+  padding: 16px;
+  width: 100%;
+  margin-right: 32px;
+}
+
+.header-back-btn {
+  background: url('../img/icon-back-btn.svg');
+  width: 24px;
+  height: 22px;
+  background-repeat: no-repeat;
+  margin-top: 16px;
+  border: none !important;
+}
+
+.buyer__title .buyer__title-details {
+  background-color: #4A5164;
+  width: 100%;
+  height: 56px;
+  color: #FFFFFF;
+  padding: 16px;
+  text-align: center;
+}
+
+.buyer__divider {
+  background-color: #E3E4E7;
+  width: 100%;
+  height: 11px;
+}
+
+.mode-of-payment--title .title-content {
+  background-color: #FFFFFF;
+  font-weight: bold;
+  text-align: left;
+  height: 47px;
+  font-size: 18px;
+  padding: 10px 0 0 8px;
+  border-bottom: 1px solid #E3E4E7;
+}
+
+.mode-of-payment--gcash {
+  display: flex;
+  height: 68px;
+  padding: 8px;
+  border-bottom: 1px solid #E3E4E7;
+}
+
+.mode-of-payment--grabpay {
+  display: flex;
+  height: 68px;
+  padding: 8px;
+  border-bottom: 1px solid #E3E4E7;
+}
+
+.mode-of-payment--paymaya {
+  display: flex;
+  height: 68px;
+  padding: 8px;
+  border-bottom: 1px solid #E3E4E7;
+}
+
+.mode-of-payment--visa {
+  display: flex;
+  height: 68px;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+.buyer__mode-of-payment {
+  border-bottom: 1px solid #E3E4E7;
+}
+
+.mode-of-payment--gcash .mode-of-payment--list .list-icon {
+  background: url('/img/paymongo/icon-gcash.svg');
+  width: 50px;
+  height: 50px;
+  color: #666666;
+  font-weight: 400;
+  padding: 16px;
+}
+
+.mode-of-payment--grabpay .mode-of-payment--list .list-icon {
+  background: url('/img/paymongo/icon-grabpay.svg');
+  width: 50px;
+  height: 50px;
+  color: #666666;
+  font-weight: 400;
+  padding: 16px;
+}
+
+.mode-of-payment--paymaya .mode-of-payment--list .list-icon {
+  background: url('/img/paymongo/icon-paymaya.svg');
+  width: 50px;
+  height: 50px;
+  color: #666666;
+  font-weight: 400;
+  padding: 16px;
+}
+
+.mode-of-payment--visa .mode-of-payment--list .list-icon {
+  background: url('/img/paymongo/icon-visa.svg');
+  width: 50px;
+  height: 50px;
+  color: #666666;
+  font-weight: 400;
+  padding: 16px;
+}
+
+.radio-button {
+  color: #FFFFFF;
+  border-radius: 50%;
+  padding: 16px;
+}
+
+.mode-of-payment--list {
+  display: flex;
+}
+
+.mode-of-payment--list .list-text {
+  padding: 14px;
+  color: #666666;
+}
+
+.mode-of-payment--button {
+  background-color: #E3E4E7;
+  height: 111px;
+  padding: 24px 8px 24px 8px;
+}
+
+.mode-of-payment--button .pay-button:disabled {
+  background-color: #AAAAAA;
+  color: #FFFFFF;
+  font-weight: bold;
+  justify-content: center;
+  height: 56px;
+  width: 100%;
+  padding: 16px;
+  cursor: not-allowed;
+  border: none !important;
+}
+
+.mode-of-payment--button .pay-button:disabled:hover {
+  background-color: #AAAAAA;
+  color: #FFFFFF;
+  font-weight: bold;
+  justify-content: center;
+  height: 56px;
+  width: 100%;
+  padding: 16px;
+  cursor: not-allowed;
+  border: none !important;
+}
+
+.mode-of-payment--button .pay-button {
+  background-color: #4A5164;
+  color: #FFFFFF;
+  font-weight: bold;
+  justify-content: center;
+  height: 56px;
+  width: 100%;
+  padding: 16px;
+  border: none !important;
+}
+
+.mode-of-payment--button .pay-button:hover {
+  background-color: #91959E;
+  color: #FFFFFF;
+  font-weight: bold;
+  justify-content: center;
+  height: 56px;
+  width: 100%;
+  padding: 16px;
+  border: none !important;
+}
+
+.card-details {
+  background-color: #FFFFFF;
+  padding-left: 50px;
+  height: 150px;
+  width: 100%;
+}
+
+.card-details .card-name {
+  display: flex;
+  width: 100%;
+}
+
+.card-details .card-number {
+  display: flex;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.card-details .card-expiry {
+  display: flex;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.card-details .card-name .card-details-label {
+  display: inline-flex;
+  padding-top: 8px;
+  color: #666666;
+  width: 16%;
+}
+
+.card-details .card-number .card-details-label {
+  display: inline-flex;
+  padding-top: 8px;
+  color: #666666;
+  width: 16%;
+  font-weight: 400;
+}
+
+.card-details .card-expiry .card-details-label {
+  display: inline-flex;
+  padding-top: 8px;
+  color: #666666;
+  width: 16%;
+}
+
+.card-details .card-name .card-details-input {
+  border: solid 1px #E3E4E7;
+  padding: 16px;
+  width: 70%;
+  height: 40px;
+  display: flex;
+  margin-left: 8px;
+}
+
+.card-details .card-number .card-details-input {
+  border: solid 1px #E3E4E7;
+  padding: 16px;
+  width: 70%;
+  height: 40px;
+  display: flex;
+  margin-left: 8px;
+}
+
+.card-details .card-expiry .input-month {
+  border: solid 1px #E3E4E7;
+  padding: 16px;
+  width: 10%;
+  height: 40px;
+  display: flex;
+  margin-left: 8px;
+}
+
+.card-details .card-expiry .input-year {
+  border: solid 1px #E3E4E7;
+  padding: 16px;
+  width: 10%;
+  height: 40px;
+  display: flex;
+  margin-left: 8px;
+}
+
+.card-details .card-expiry .input-cvc {
+  border: solid 1px #E3E4E7;
+  padding: 16px;
+  width: 20%;
+  height: 40px;
+  display: flex;
+  justify-content: left;
+}
+
+.card-expiry .card-expiry-label {
+  display: inline-flex;
+  padding-top: 8px;
+  color: #666666;
+  width: 5%;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.buyer__mode-of-payment {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.buyer__title {
+  font-family: 'Nanum Gothic', sans-serif;
+}

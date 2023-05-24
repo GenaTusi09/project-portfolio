@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/globalStyle.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/paymongo/pc-customer.css">
+    <link rel="stylesheet" href="../css/paymongo/mobile-ec-front.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <title>Paymongo App</title>
+</head>
+
+<body class="buyerPaymentPage">
+    <header class="portfolio-gnb">
+        <div class="portfolio-gnb__logo">GMT</div>
+        <div class="portfolio-gnb__topnav">
+            <a href="../index.html">Home</a>
+            <a href="https://drive.google.com/file/d/1lfobitJy1bkXi9Cc-8yqdu2UELzkxd3Z/view?usp=sharing"
+                target="_blank">Resume</a>
+            <a href="https://www.linkedin.com/in/gena-mei-tusi-922422162/" target="_blank">LinkedIn</a>
+        </div>
+      </header>
+    <!-- App Wrapper -->
+    <div id="pg-paymongo-buyer">
+
+        <!-- Header -->
+        <section>
+            <article class="buyer__header">
+                <p class="header-back-btn"></p>
+                <p class="header-text"> ectmtjpq002 </p>
+            </article>
+        </section>
+
+        <!-- Title -->
+        <section class="buyer__title">
+            <p class="buyer__title-details">PayMongo Payment Page</p>
+        </section>
+
+        <!-- Space -->
+        <section class="buyer__divider"></section>
+
+        <!-- Mode of Payment -->
+        <section class="buyer__mode-of-payment">
+            <article class="mode-of-payment--title">
+                <p class="title-content"> Method of Payment </p>
+            </article>
+
+            <article class="mode-of-payment--gcash">
+                <div class="radio-button">
+                    <input type="radio" name="radio" class="radio"> </div>
+                <div class="mode-of-payment--list">
+                    <img src="../img/paymongo/icon-gcash.svg">
+                    <p class="list-text"> GCash</p>
+                </div>
+            </article>
+
+            <article class="mode-of-payment--grabpay">
+                <div class="radio-button">
+                    <input type="radio" name="radio" class="radio" id="radio-grabpay"> </div>
+                <div class="mode-of-payment--list">
+                    <img src="../img/paymongo/icon-grabpay.svg">
+                    <p class="list-text"> GrabPay</p>
+                </div>
+            </article>
+
+            <article class="mode-of-payment--paymaya">
+                <div class="radio-button">
+                    <input type="radio" name="radio" class="radio"> </div>
+                <div class="mode-of-payment--list">
+                    <img src="../img/paymongo/icon-paymaya.svg">
+                    <p class="list-text"> Paymaya</p>
+                </div>
+            </article>
+
+            <article class="mode-of-payment--visa">
+                <div class="radio-button radio-button-visa" id="card-details">
+                    <input type="radio" name="radio" id="radio-visa" class="radio"> </div>
+                <div class="mode-of-payment--list">
+                    <img src="../img/paymongo/icon-visa.svg">
+                    <p class="list-text"> Credit / Debit Card</p>
+                </div>
+            </article>
+
+            <article class="card-details" style="display: none;">
+                <div class="card-name">
+                    <label class="card-details-label"> Name on Card </label> <input type="text" class="card-details-input radio-button-visa" id="input-card-name">
+                </div>
+
+                <div class="card-number">
+                    <label class="card-details-label"> Card Number </label> <input type="text" class="card-details-input radio-button-visa" id="input-card-number">
+                </div>
+
+                <div class="card-expiry">
+                    <label class="card-details-label"> Expiry Date </label>
+                    <input type="text" class="input-month radio-button-visa" placeholder="MM" id="input-ce-month">
+                    <input type="text" class="input-year radio-button-visa" placeholder="YYYY" id="input-ce-year">
+                    <label class="card-expiry-label"> CSV </label><input type="text" class="input-cvc radio-button-visa" id="input-ce-cvc">
+                </div>
+            </article>
+            <!-- Button -->
+            <article class="mode-of-payment--button">
+                <button class="pay-button" id="submit" disabled> Pay P3,000.00</button>
+
+            </article>
+        </section>
+
+    </div>
+
+</body>
+<!-- JQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- Custom JS -->
+<script src="../js/paymongo/pc-customer.js" type="text/javascript"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</html>

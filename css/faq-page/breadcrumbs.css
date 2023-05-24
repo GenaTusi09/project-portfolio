@@ -1,0 +1,45 @@
+.cafe24-experts-front__breadcrumbs {
+  font-size: 15px;
+  display: flex;
+  justify-content: start;
+  margin-bottom: 65px;
+  line-height: 24px;
+  padding-left: 0;
+}
+
+.cafe24-experts-front__breadcrumbs-links:nth-of-type(1) {
+  margin-left: 0;
+}
+
+.cafe24-experts-front__breadcrumbs-links {
+  margin-left: 25px;
+  color: var(--title-color);
+  list-style-type: none;
+}
+
+.cafe24-experts-front__breadcrumbs-links a {
+  color: #999999;
+  position: relative;
+  text-decoration: none;
+}
+
+.cafe24-experts-front__breadcrumbs-links a::before {
+  position: absolute;
+  content: '';
+  right: -16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 6px;
+  background-repeat: no-repeat;
+  background-image: url('//img.echosting.cafe24.com/api/partner/front/images/icons/breadcrumbsArrow.svg');
+}
+
+/* Media queries */
+
+/* Tablet and mobile */
+@media screen and (max-width: 1280px) {
+  .cafe24-experts-front__breadcrumbs {
+    display: none;
+  }
+}

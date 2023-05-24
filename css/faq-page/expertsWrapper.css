@@ -1,0 +1,46 @@
+.experts-wrapper * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: '';
+}
+
+.swiper-button-next.btn-next,
+.swiper-button-prev.btn-prev {
+  content: '';
+  background-color: #FFFFFF;
+  width: 60px;
+  height: 60px;
+  border-radius: 40px;
+  border: 1px solid #C7D7E1;
+  font-size: 0;
+}
+
+.swiper-button-next.btn-next::after {
+  content: '' !important;
+  display: inline-block;
+  background: url('//img.echosting.cafe24.com/api/partner/front/images/icons/banner-carousel-right.png') center no-repeat;
+  width: 60px;
+  height: 60px;
+  margin-right: -4px;
+}
+
+.swiper-button-prev.btn-prev::after {
+  content: '' !important;
+  display: inline-block;
+  background: url('//img.echosting.cafe24.com/api/partner/front/images/icons/banner-carousel-left.png') center no-repeat;
+  width: 60px;
+  height: 60px;
+  margin-left: -4px;
+}
+
+/* Hover only device */
+@media (hover: hover) {
+  .btn-next:hover,
+  .btn-prev:hover {
+    background-color: #C7D7E1;
+  }
+}

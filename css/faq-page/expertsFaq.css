@@ -1,0 +1,412 @@
+.experts-wrapper .faq-wrapper {
+  margin: 120px auto 80px;
+  max-width: 1408px;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.experts-wrapper .faq-wrapper .faq {
+  width: 27%;
+}
+
+.experts-wrapper .faq-wrapper .faq h2 {
+  color: #1B1E26;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  padding-bottom: 40px;
+}
+
+.experts-wrapper .faq-wrapper .faq .tablet--font-size {
+  font-size: 36px;
+}
+
+.experts-wrapper .faq-wrapper .category-list li {
+  margin-bottom: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.experts-wrapper .faq-wrapper .category-list li a {
+  margin-bottom: 10px;
+  color: #999999;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 31px;
+  letter-spacing: -0.2px;
+  text-decoration: none;
+}
+
+.experts-wrapper .faq-wrapper .category-list li.active a {
+  color: #1B1E26;
+}
+
+.experts-wrapper .faq-wrapper .faq-list {
+  width: 100%;
+}
+
+.wrapper_home .experts-wrapper .faq-wrapper .faq-list {
+  width: 896px;
+  margin-top: -22px;
+}
+
+.experts-wrapper .faq-wrapper .faq-list .experts-accordion-wrapper .experts-accordion-wrapper__content {
+  border-bottom: 1px solid #C7D7E1;
+}
+
+/* Hides the faq items after nth count */
+.first-five .experts-accordion-wrapper__content:nth-child(5) ~ .experts-accordion-wrapper__content,
+.first-ten .experts-accordion-wrapper__content:nth-child(10) ~ .experts-accordion-wrapper__content,
+.first-fifteen .experts-accordion-wrapper__content:nth-child(15) ~ .experts-accordion-wrapper__content,
+.first-twenty .experts-accordion-wrapper__content:nth-child(20) ~ .experts-accordion-wrapper__content,
+.first-twentyfive .experts-accordion-wrapper__content:nth-child(25) ~ .experts-accordion-wrapper__content,
+.first-thirty .experts-accordion-wrapper__content:nth-child(30) ~ .experts-accordion-wrapper__content {
+  display: none;
+}
+
+.faq-btn::after {
+  content: '';
+  display: inline-block;
+  background: url('//img.echosting.cafe24.com/api/partner/front/images/icons/faq-accordion-down.png') center;
+  width: 28px !important;
+  height: 8px;
+  background-repeat: no-repeat !important;
+  min-width: 28px;
+}
+
+.experts-accordion-btn {
+  cursor: pointer;
+  padding: 26px 26px 25px 0;
+  user-select: none;
+  color: #1B1E26;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+  letter-spacing: -0.2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+
+.experts-accordion-btn::after {
+  content: '';
+  display: inline-block;
+  background: url('//img.echosting.cafe24.com/api/partner/front/images/icons/faq-accordion-down.png') center;
+  width: 12px;
+  height: 8px;
+}
+
+.experts-accordion-btn.experts-accordion-btn-active::after {
+  background: url('//img.echosting.cafe24.com/api/partner/front/images/icons/faq-accordion-up.png') center;
+}
+
+.experts-accordion-btn.experts-accordion-btn-active {
+  color: #1A72E7;
+  border-bottom: 1px solid #1A72E7;
+}
+
+.experts-wrapper .faq-wrapper .faq-list .experts-accordion-content {
+  padding: 20px 0 29px;
+  color: #666666;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 30px;
+  letter-spacing: -0.2px;
+}
+
+.experts-wrapper .faq-wrapper .faq-list .more-faqs-btn {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.experts-wrapper .faq-wrapper .faq-list .faq-list__breadcrumbs .cafe24-experts-front__breadcrumbs-links {
+  border-bottom: none;
+}
+
+.faq-list__breadcrumbs.cafe24-experts-front__breadcrumbs {
+  margin-bottom: 40px;
+}
+
+.faq-btn {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.faq-btn-content {
+  width: 100%;
+}
+
+#client {
+  display: none;
+}
+
+#client.active {
+  display: block;
+}
+
+#partners {
+  display: none;
+}
+
+#partners.active {
+  display: block;
+}
+
+.experts-accordion-content .txt-blue {
+  color: #1A72E7;
+}
+
+/* pc only */
+@media (min-width: 1281px) {
+  .experts-accordion-content .link-blue:hover {
+    text-decoration: underline;
+  }
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1280px) {
+  .experts-wrapper .faq-wrapper {
+    flex-direction: column;
+    margin: 50px auto;
+  }
+
+  .experts-wrapper .faq-wrapper .category-list {
+    display: flex;
+  }
+
+  .experts-wrapper .faq-wrapper .category-list li {
+    margin-right: 20px;
+    margin-bottom: 6px;
+  }
+
+  .experts-wrapper .faq-wrapper .faq-list .more-faqs-btn {
+    margin-top: 30px;
+  }
+
+  .experts-wrapper .faq-wrapper .faq-list {
+    width: 100%;
+    padding-right: 0;
+    overflow: hidden;
+  }
+
+  .wrapper_home .experts-wrapper .faq-wrapper .faq-list {
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .experts-accordion-btn {
+    width: 100%;
+    width: calc(100vw - 48px);
+    padding-right: 12px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    padding-bottom: 23px;
+    padding-top: 24px;
+  }
+
+  .experts-accordion-btn img {
+    display: none;
+  }
+
+  .cafe24-experts-front__breadcrumbs {
+    display: none;
+  }
+
+  .faq-btn {
+    width: 100%;
+  }
+
+  .faq-btn-content {
+    width: 100%;
+  }
+
+  .experts-wrapper .faq-wrapper .faq h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: -0.5px;
+    margin-bottom: 30px;
+    padding-bottom: 0;
+  }
+
+  .experts-wrapper .faq-wrapper .category-list li.active a {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: -0.2px;
+  }
+
+  .experts-wrapper .faq-wrapper .faq-list .experts-accordion-content {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    padding-top: 16px;
+    padding-bottom: 25px;
+  }
+
+  .experts-wrapper .faq-wrapper .category-list li.active a,
+  .experts-wrapper .faq-wrapper .category-list li a {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: -0.2px;
+  }
+}
+
+/* mobile */
+@media (max-width: 767px) {
+  .wrapper_faq .portfolio-gnb {
+    display: none;
+  }
+
+  .wrapper_faq .experts-wrapper {
+    margin-top: 0;
+  }
+
+  .experts-wrapper {
+    padding-top: 90px;
+  }
+
+  .experts-wrapper .faq-wrapper {
+    flex-direction: column;
+    margin: 50px auto;
+  }
+
+  .wrapper_faq .experts-wrapper .faq-wrapper {
+    margin-top: 40px;
+  }
+
+  .experts-wrapper .faq-wrapper .category-list {
+    display: flex;
+    width: 300px;
+    margin-bottom: 14px;
+  }
+
+  .experts-wrapper .faq-wrapper .category-list li {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .experts-wrapper .faq-wrapper .faq-list .more-faqs-btn {
+    width: 100%;
+    padding-right: 0;
+    margin-top: 20px;
+  }
+
+  .experts-wrapper .faq-wrapper .faq-list {
+    width: 100%;
+    padding-right: 0;
+    overflow: hidden;
+  }
+
+  .wrapper_home .experts-wrapper .faq-wrapper .faq-list {
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .experts-accordion-btn {
+    width: calc(100vw - 48px);
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    padding: 0;
+  }
+
+  .experts-accordion-btn img {
+    display: none;
+  }
+
+  .experts-accordion-content {
+    width: 100%;
+    padding-right: 24px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    padding-bottom: 0;
+  }
+
+  .experts-accordion-btn::after {
+    display: none;
+  }
+
+  .cafe24-experts-front__breadcrumbs {
+    display: none;
+  }
+
+  .faq-btn {
+    width: 100%;
+  }
+
+  .faq-btn-content {
+    width: 100%;
+  }
+
+  .experts-wrapper .faq-wrapper .faq h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: -0.5px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+  }
+
+  .experts-wrapper .faq-wrapper .category-list li.active a {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: -0.2px;
+  }
+
+  .more-faqs-btn a {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: -0.2px;
+  }
+
+  .experts-accordion-btn.faq-btn {
+    padding: 16px 0 15px;
+  }
+
+  .experts-wrapper .faq-wrapper .faq-list .experts-accordion-content {
+    padding: 16px 0 20px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+  }
+
+  .experts-wrapper .faq-wrapper .category-list li.active a,
+  .experts-wrapper .faq-wrapper .category-list li a {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: -0.2px;
+  }
+
+  .more-faqs-btn .main-page-rounded-btn {
+    width: 113px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .experts-wrapper .mini-banner-2 .right {
+    top: 40px;
+  }
+
+  .experts-wrapper .faq-wrapper .faq-list .experts-accordion-wrapper .experts-accordion-wrapper__content {
+    border-bottom: 1px solid #D9D9D9;
+  }
+}

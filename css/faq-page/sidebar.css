@@ -1,0 +1,838 @@
+.cafe24-experts-front-sidebar {
+  width: 232px;
+  margin-right: 116px;
+  z-index: 5;
+  margin-top:10px;
+}
+
+.cafe24-experts-front-sidebar__title {
+  color: var(--title-color);
+  font-size: 42px;
+  margin-bottom: 71px;
+  line-height: 54px;
+}
+
+.cafe24-experts-front-sidebar__title.cafe24-experts-front-sidebar__back,
+.cafe24-experts-front-sidebar__title.cafe24-experts-front-sidebar__projName {
+    display:inline-block;
+    position:relative;
+    font-size:28px;
+    margin-left:32px;
+}
+
+.cafe24-experts-front-sidebar__title.cafe24-experts-front-sidebar__back:before,
+.cafe24-experts-front-sidebar__title.cafe24-experts-front-sidebar__projName:before {
+    content: "";
+    display:inline-block;
+    width:10px;
+    height:10px;
+    border: 2px solid #1B1E26;
+    border-top:0;
+    border-left:0;
+    transform: rotate(135deg);
+    position:absolute;
+    top:10px;
+    left:-30px;
+}
+
+.cafe24-experts-front-sidebar__stepper-title {
+  font-size: 21px;
+  line-height: 31px;
+  margin-bottom: 10px;
+  margin-top: 41px;
+  color: var(--title-color);
+}
+
+.cafe24-experts-front-sidebar__stepper {
+  background-color: #F8F8F8;
+  border-radius: 8px;
+  padding: 25px 0 25px 25px;
+  margin-bottom: 26px;
+  max-height: 248px;
+}
+
+.cafe24-experts-front-sidebar__text {
+  font-size: 21px;
+  line-height: 31px;
+  color: #999999;
+  margin-bottom: 16px;
+}
+
+.cafe24-experts-front-sidebar__text--dark {
+  color: var(--title-color);
+}
+
+.cafe24-experts-front-sidebar__divider {
+  margin: 40px 0;
+  border: 0;
+  border-top: 1px solid var(--border-grey);
+}
+
+.cafe24-experts-front-sidebar__date {
+  margin-bottom: 20px;
+  color: #999999;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+/* New Stepper */
+
+ul.cafe24-experts-front-sidebar-step {
+  width: 125px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* min-height: 232px; */
+  min-height: 198px;
+}
+
+.cafe24-experts-front-sidebar-step__item {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.cafe24-experts-front-sidebar-step__item:first-of-type {
+  margin-top: 0;
+}
+
+.cafe24-experts-front-sidebar-step__action img {
+  z-index: 10;
+}
+
+.cafe24-experts-front-sidebar-step__action {
+  display: flex;
+  position: relative;
+}
+
+.cafe24-experts-front-sidebar-step__item:nth-of-type(1) .cafe24-experts-front-sidebar-step__action::before {
+  display: none;
+}
+
+.cafe24-experts-front-sidebar-step__item:nth-of-type(2) .cafe24-experts-front-sidebar-step__action::before {
+  height: 39px;
+  height: 35px;
+  top: -29px;
+}
+
+.cafe24-experts-front-sidebar-step__item--current .cafe24-experts-front-sidebar-step__name {
+  color: var(--primary-color);
+}
+
+.cafe24-experts-front-sidebar-step__name {
+  margin-left: 10px;
+  color: #C7D7E1;
+  font-size: 17px;
+  line-height: 30px;
+  text-decoration: none;
+  cursor: text;
+}
+
+.cafe24-experts-front-sidebar-step__item--current .cafe24-experts-front-sidebar-step__name:hover {
+  cursor: pointer;
+}
+
+.cafe24-experts-front-sidebar-step__item--current .cafe24-experts-front-sidebar-step__left-img::before {
+  background-color: var(--secondary-color);
+  height: 28px;
+  top: -28px;
+}
+
+.cafe24-experts-front-sidebar-step__item--current .cafe24-experts-front-sidebar-step__left-img {
+  background-image: url('//img.echosting.cafe24.com/api/partner/front/images/icons/currentStep.svg');
+  z-index: 1 !important;
+}
+
+.cafe24-experts-front-sidebar-step__item--active .cafe24-experts-front-sidebar-step__left-img {
+  background-image: url('//img.echosting.cafe24.com/api/partner/front/images/icons/activeStep.svg');
+}
+
+.cafe24-experts-front-sidebar-step__item--active .cafe24-experts-front-sidebar-step__name {
+  cursor: pointer;
+  color: var(--secondary-color);
+}
+
+.cafe24-experts-front-sidebar-step__item--active .cafe24-experts-front-sidebar-step__left-img::before {
+  background-color: var(--secondary-color);
+  top: -35px;
+  height: 42px;
+}
+
+.cafe24-experts-front-sidebar-step__left-img {
+  background-image: url('//img.echosting.cafe24.com/api/partner/front/images/icons/itemStep.svg');
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+}
+
+.cafe24-experts-front-sidebar-step__item:first-of-type .cafe24-experts-front-sidebar-step__left-img::before {
+  display: none;
+}
+
+.cafe24-experts-front-sidebar-step__left-img::before {
+  position: absolute;
+  content: '';
+  left: 50%;
+  top: -28px;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 34px;
+  background-color: #C7D7E1;
+}
+
+.cafe24-experts-front-sidebar-step__item--current + .cafe24-experts-front-sidebar-step__item .cafe24-experts-front-sidebar-step__left-img::before {
+  height: 28px;
+  top: -22px;
+}
+
+.cafe24-experts-front-sidebar-mobile-disp-none {
+  display: none;
+}
+
+/* new project management */
+.cafe24-experts-front-sidebar__column {
+  margin-bottom: 44px;
+}
+
+.cafe24-experts-front-sidebar__column-title {
+  font-size: 21px;
+  line-height: 31px;
+  color: var(--title-color);
+  margin-bottom:20px;
+}
+
+.cafe24-experts-front-sidebar__depth li{
+  list-style: none;
+  margin-bottom:10px;
+}
+
+.cafe24-experts-front-sidebar__depth li > a {
+  font-size:17px;
+  line-height: 30px;
+  color: #999;
+}
+
+.cafe24-experts-front-sidebar__depth li.selected > a {
+  color: var(--title-color);
+}
+
+/* 프로젝트 관리 > 마이 프로젝트 */
+.cafe24-experts-front__myProj .cafe24-experts-front-sidebar__client-breakdown.imgList {
+    margin:0;
+    padding:0 25px 30px;
+    border-bottom:1px solid #ddd;
+}
+
+.cafe24-experts-front__myProj .cafe24-experts-front-sidebar__client-breakdown.imgList .cafe24-experts-front-sidebar__text .cafe24-experts-front-sidebar__num {
+    display:inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    color:#fff;
+    width:25px;
+    height:20px;
+    background-color: var(--secondary-color);
+    border-radius: 99px;
+    font-weight: 500;
+    padding:1px 6px;
+    margin: 0 0 0 5px;
+    vertical-align: middle;
+}
+
+.cafe24-experts-front__myProj .cafe24-experts-front-sidebar__client-breakdown.imgList .cafe24-experts-front-sidebar__client-breakdown-item {
+    justify-content: initial;
+    align-items: center;
+    margin-top:12px;
+}
+
+.cafe24-experts-front__myProj .cafe24-experts-front-sidebar__client-breakdown.imgList .cafe24-experts-front-sidebar__client-breakdown-item .title {
+    font-size: 15px;
+    line-height: 24px;
+    color: var(--title-color);
+    margin-left:10px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.cafe24-experts-front__myProj .cafe24-experts-front-sidebar__client-breakdown.imgList .cafe24-experts-front-sidebar__client-breakdown-item img {
+    width:36px;
+    height:36px;
+}
+
+.cafe24-experts-front__myProj .cafe24-experts-front-sidebar__client-breakdown.imgList .cafe24-experts-front-sidebar__total-view-link {
+    font-size:15px;
+    line-height: 24px;
+    color:#999;
+}
+
+.cafe24-experts-front__myProj .cafe24-experts-front-sidebar__client-breakdown.imgList .cafe24-experts-front-sidebar__total-view-link:after {
+    content: "";
+    display: inline-block;
+    width:6px;
+    height:6px;
+    border:2px solid #999;
+    border-left:0;
+    border-bottom:0;
+    transform: rotate(45deg);
+    margin:0 0 1px 6px;
+}
+
+.cafe24-experts-front__myProj .cafe24-experts-front-button--delete img {
+    display: none;
+    padding-right:7px;
+}
+.cafe24-experts-front__myProj .cafe24-experts-front-button:hover img {
+    display: inline-block;
+}
+/* //프로젝트 관리 > 마이 프로젝트 */
+
+/* Sidebar mobile */
+.cafe24-experts-front-sidebar-mobile {
+  display: flex;
+  padding: 14px 24px 12px;
+  min-height: 68px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.cafe24-experts-front-sidebar-mobile__progress-bar {
+  height: 3px;
+  width: 100%;
+  display: flex;
+  background-color: #D1E3FA;
+}
+
+.cafe24-experts-front-sidebar-mobile__progress-bar-item {
+  flex: 1;
+  height: 100%;
+}
+
+.cafe24-experts-front-sidebar-mobile__progress-bar-item--active {
+  background-color: #1A72E7;
+}
+
+.cafe24-experts-front-sidebar-mobile__left {
+  color: var(--primary-color);
+}
+
+.cafe24-experts-front-sidebar-mobile__left span {
+  color: #8CB8F3;
+}
+
+.cafe24-experts-front-sidebar-mobile__left-title {
+  display: inline;
+}
+
+.cafe24-experts-front-sidebar-mobile__right {
+  display: flex;
+  align-items: center;
+}
+
+.cafe24-experts-front-sidebar-mobile__date {
+  white-space: nowrap;
+  margin-right: 12px;
+  font-size: 14px;
+  color: #BBBBBB;
+}
+
+.cafe24-experts-front-sidebar-mobile__right--mobile {
+  display: none;
+}
+
+.cafe24-experts-front-sidebar__title-mobile,
+.cafe24-experts-front__mState-mobile,
+.cafe24-experts-front__myProj .cafe24-experts-front-sidebar__client .total-info-view {
+  display:none;
+}
+
+/*pc*/
+@media screen and (min-width: 1281px) {
+  .cafe24-experts-front-sidebar__client-breakdown-list {
+    margin-bottom:16px;
+  }
+}
+
+/* Tablet and mobile */
+@media screen and (max-width: 1280px) {
+  .cafe24-experts-front-sidebar-mobile-disp-none {
+    display: block;
+  }
+
+  .cafe24-experts-front-sidebar {
+    display: none;
+  }
+
+  /* 프로젝트 관리 상세 */
+  .cafe24-experts-front-managementDetail .cafe24-experts-front-sidebar {
+    display:inline-block;
+  }
+
+  .cafe24-experts-front-managementDetail .cafe24-experts-front-sidebar .cafe24-experts-front-sidebar__title.cafe24-experts-front-sidebar__back {
+    display:none;
+  }
+
+  .cafe24-experts-front-managementDetail .cafe24-experts-front-sidebar .cafe24-experts-front-sidebar__title.cafe24-experts-front-sidebar__back:before {
+    content: none;
+  }
+
+  .cafe24-experts-front-sidebar__detail-scroll:after,
+  .cafe24-experts-front-sidebar__detail-scroll:before {
+    content: none !important;
+  }
+
+  .cafe24-experts-front-sidebar__detail-scroll .cafe24-experts-front-sidebar__detail-wrap:after,
+  .cafe24-experts-front-sidebar__detail-scroll .cafe24-experts-front-sidebar__detail-wrap:before {
+    content: none !important;
+  }
+
+  .cafe24-experts-front-managementDetail .cafe24-experts-front-sidebar .cafe24-experts-front__mState-mobile {
+    display:inline-block;
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 700;
+    margin-top:19px;
+    color: var(--title-color);
+  }
+
+  .cafe24-experts-front-managementDetail .cafe24-experts-front-sidebar .mSelect.cafe24-experts-front__searchArea-select {
+    width: 150px !important;
+    min-width: 150px !important;
+    float:right;
+    margin-top:8px;
+  }
+
+  .cafe24-experts-front-managementDetail .cafe24-experts-front-sidebar .mSelect.cafe24-experts-front__searchArea-select .value {
+    padding:8px 21px 8px 0;
+    border: 0 !important;
+    text-align: right;
+  }
+
+  .cafe24-experts-front-managementDetail .cafe24-experts-front-sidebar .mSelect.cafe24-experts-front__searchArea-select .cover::after {
+    right:2px;
+    border-color: #666;
+  }
+
+  .cafe24-experts-front-managementDetail .cafe24-experts-front-sidebar .mSelect.cafe24-experts-front__searchArea-select .dropdown {
+    left:0px;
+  }
+
+  .cafe24-experts-front-managementDetail .cafe24-experts-front-sidebar .mSelect.cafe24-experts-front__searchArea-select .dropdown .option.no-scroll a {
+    padding:10px 15px;
+    line-height: 24px;
+  }
+
+  .cafe24-experts-front-sidebar__detail-scroll .cafe24-experts-front-sidebar__detail-wrap .cafe24-experts-front-sidebar__client-partner-wrap .image-holder {
+    top:25px;
+  }
+
+  .cafe24-experts-front-sidebar__detail-scroll .cafe24-experts-front-sidebar__detail-wrap .cafe24-experts-front-sidebar__client-partner-wrap .status-profile-name .name {
+    font-size:15px;
+    line-height: 24px;
+    margin-top:4px;
+  }
+
+  .cafe24-experts-front-sidebar__detail-scroll .cafe24-experts-front-sidebar__detail-wrap .cafe24-experts-front-sidebar__client-partner-wrap .cafe24-experts-front-sidebar__client-breakdown-list {
+    margin-top:16px;
+  }
+
+  .cafe24-experts-front-sidebar__detail-scroll .cafe24-experts-front-sidebar__detail-wrap .cafe24-experts-front-sidebar__client-partner-wrap .cafe24-experts-front-sidebar__client-breakdown-item {
+    font-size:14px;
+    line-height:22px;
+    margin-top:6px;
+  }
+
+  .cafe24-experts-front-sidebar__detail-scroll .cafe24-experts-front-sidebar__detail-wrap .cafe24-experts-front-sidebar__client-partner-wrap .cafe24-experts-front-sidebar__client-breakdown-item .title {
+    font-size:14px;
+  }
+  /* //프로젝트 관리 상세 */
+
+  /* 프로젝트 관리 > 마이 프로젝트 */
+  .cafe24-experts-front__myProj {
+    display:block;
+    padding:0px 24px 0 !important;
+  }
+
+  .cafe24-experts-front__myProj .cafe24-experts-front-sidebar {
+    display:block;
+    margin:0;
+    width:100%;
+  }
+
+  .cafe24-experts-front__myProj .cafe24-experts-front-sidebar__client {
+    position:relative;
+  }
+
+  .cafe24-experts-front__myProj .cafe24-experts-front-sidebar__client .total-info-view {
+    display:inline-block;
+    position:absolute;
+    top:0;
+    right:0;
+    line-height: 30px;
+    font-weight: 700;
+    font-size: 0px;
+    width:100%;
+    text-align: right;
+  }
+
+  .cafe24-experts-front__myProj .cafe24-experts-front-sidebar__client.expanded .total-info-view {
+    top:initial;
+    right:initial;
+    bottom:20px;
+    left:0;
+    padding:0;
+    text-align: center;
+    height:24px;
+  }
+
+  .cafe24-experts-front__myProj .cafe24-experts-front-sidebar__client .total-info-view:after {
+    content: "";
+    display: inline-block;
+    border: 2px solid #5F8CAA;
+    width: 8px;
+    height: 8px;
+    border-bottom: 0;
+    border-left: 0;
+    margin: 0px 2px -2px 12px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    transition: all .5s;
+    -webkit-transition: all .5s;
+  }
+
+  .cafe24-experts-front__myProj .cafe24-experts-front-sidebar__client.expanded .total-info-view:after {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    margin: 0px 0px -3px 12px;
+  }
+
+  .cafe24-experts-front__myProj .cafe24-experts-front-sidebar__client .total-info-view:before {
+    content: "";
+    display: inline-block;
+    font-size: 15px;
+    line-height: 24px;
+    color: var(--secondary-color);
+  }
+
+  .cafe24-experts-front__myProj .cafe24-experts-front-sidebar__client.expanded .total-info-view:before {
+    content: "닫기";
+  }
+
+  .cafe24-experts-front__myProj .cafe24-experts-front-sidebar__title,
+  .cafe24-experts-front__myProj .cafe24-experts-front-sidebar__detail-button-wrap,
+  .cafe24-experts-front__myProj .cafe24-experts-front-sidebar__detail-wrap .cafe24-experts-front-button--delete {
+    display:none;
+  }
+
+  .cafe24-experts-front__myProj .cafe24-experts-front-sidebar__client-profile {
+    display:flex;
+    margin:20px 0 0;
+    border:0;
+    padding:0;
+    height:48px;
+  }
+
+  .cafe24-experts-front__myProj .expanded .cafe24-experts-front-sidebar__client-profile {
+    height:auto;
+    flex-flow: wrap;
+    justify-content: space-between;
+    gap: 78px;
+    padding-bottom:64px;
+  }
+
+  .cafe24-experts-front__myProj .cafe24-experts-front-sidebar__client-profile .cafe24-experts-front-sidebar__client-breakdown {
+    margin:0;
+    padding:0;
+  }
+
+  .cafe24-experts-front__myProj .expanded .cafe24-experts-front-sidebar__client-profile .cafe24-experts-front-sidebar__client-breakdown {
+    width:320px;
+  }
+
+  .cafe24-experts-front__myProj .cafe24-experts-front-sidebar__client-profile .cafe24-experts-front-sidebar__client-breakdown.imgList {
+    position:relative;
+    margin-right: 25px;
+    border:0;
+  }
+
+  .cafe24-experts-front__myProj .expanded .cafe24-experts-front-sidebar__client-profile .cafe24-experts-front-sidebar__client-breakdown.imgList {
+    margin-right:0;
+  }
+
+  .cafe24-experts-front__myProj .cafe24-experts-front-sidebar__client-profile .cafe24-experts-front-sidebar__client-breakdown.imgList .cafe24-experts-front-sidebar__total-view-link {
+    display:none;
+  }
+
+  .cafe24-experts-front__myProj .expanded .cafe24-experts-front-sidebar__client-profile .cafe24-experts-front-sidebar__client-breakdown.imgList .cafe24-experts-front-sidebar__total-view-link {
+    display:inline-block;
+    position:absolute;
+    top:3px;
+    right:0;
+  }
+
+  .cafe24-experts-front__myProj .cafe24-experts-front-sidebar__client-profile .cafe24-experts-front-sidebar__client-breakdown.imgList:after {
+    content:"";
+    display:inline-block;
+    width:1px;
+    height:11px;
+    background-color: #999;
+    position:absolute;
+    top:9px;
+    right:-12px;
+    vertical-align: middle;
+  }
+
+  .cafe24-experts-front__myProj .expanded .cafe24-experts-front-sidebar__client-profile .cafe24-experts-front-sidebar__client-breakdown.imgList:after {
+    content: none;
+  }
+
+  .cafe24-experts-front__myProj .cafe24-experts-front-sidebar__client-profile .cafe24-experts-front-sidebar__client-breakdown .cafe24-experts-front-sidebar__client-breakdown-title {
+    line-height: 30px;
+    margin-bottom:18px;
+  }
+
+  .cafe24-experts-front__myProj .cafe24-experts-front-sidebar__client-profile .cafe24-experts-front-sidebar__client-breakdown .cafe24-experts-front-sidebar__client-breakdown-list {
+    display:none;
+  }
+
+  .cafe24-experts-front__myProj .expanded .cafe24-experts-front-sidebar__client-profile .cafe24-experts-front-sidebar__client-breakdown .cafe24-experts-front-sidebar__client-breakdown-list {
+    display:block;
+  }
+
+  .cafe24-experts-front__myProj .cafe24-experts-front__proj-information-wrap {
+    margin-top: 40px;
+  }
+  /* //프로젝트 관리 > 마이 프로젝트 */
+}
+
+@media (max-width: 767px) {
+  .cafe24-experts-front-sidebar-mobile__date {
+    display: none;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .cafe24-experts-front-sidebar-mobile__left-title {
+    margin-left: 18px;
+  }
+
+  .cafe24-experts-front-sidebar-mobile__left {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  /* 프로젝트 관리 상세 */
+  .cafe24-experts-front-managementDetail {
+    flex-direction: column;
+  }
+
+  .cafe24-experts-front-managementDetail .cafe24-experts-front-sidebar {
+    width:auto;
+    margin:0;
+  }
+
+  .cafe24-experts-front-managementDetail .cafe24-experts-front-sidebar .cafe24-experts-front-sidebar__title-mobile {
+    display:block;
+    margin: 0 -24px;
+    padding: 0 24px;
+    border-bottom:1px solid #ddd;
+  }
+
+  .cafe24-experts-front-managementDetail .cafe24-experts-front-sidebar .cafe24-experts-front-sidebar__title.cafe24-experts-front-sidebar__projName {
+    font-size: 17px;
+    line-height: 30px;
+    margin: 19px 32px 19px 40px;
+  }
+
+  .cafe24-experts-front-managementDetail .cafe24-experts-front-sidebar .cafe24-experts-front-sidebar__title.cafe24-experts-front-sidebar__projName:before {
+    top:9px;
+    left: -30px;
+  }
+
+  .cafe24-experts-front-sidebar__detail-scroll {
+    margin:0 -24px;
+  }
+
+  .cafe24-experts-front-sidebar__detail-scroll .cafe24-experts-front-sidebar__detail-wrap .cafe24-experts-front-sidebar__client-partner {
+    display: flex;
+    margin-top:12px;
+    overflow-y:hidden;
+    overflow-x:auto;
+    max-height:auto;
+    padding:0;
+  }
+
+  .cafe24-experts-front-sidebar__detail-scroll .cafe24-experts-front-sidebar__detail-wrap .cafe24-experts-front-sidebar__client-partner::-webkit-scrollbar{
+    display: none;
+    width: 0;
+    height: 0;
+    background: transparent;
+    -webkit-appearance: none;
+  }
+
+  .cafe24-experts-front-sidebar__detail-scroll .cafe24-experts-front-sidebar__detail-wrap .cafe24-experts-front-sidebar__client-partner-wrap {
+    display:inline-block;
+    min-width:232px;
+    margin: 0 12px 40px 0;
+    padding:25px;
+  }
+
+  .cafe24-experts-front-sidebar__detail-scroll .cafe24-experts-front-sidebar__detail-wrap .cafe24-experts-front-sidebar__client-partner-wrap:first-child {
+    margin-left:24px;
+  }
+
+  .cafe24-experts-front-sidebar__detail-scroll .cafe24-experts-front-sidebar__detail-wrap .cafe24-experts-front-sidebar__client-partner-wrap:last-child {
+    margin-right:24px;
+  }
+  /* //프로젝트 관리 상세 */
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .cafe24-experts-front-sidebar-mobile {
+    padding: 11px 24px;
+    min-height: 55px;
+  }
+
+  .cafe24-experts-front-sidebar-mobile__left-title {
+    margin-left: 11px;
+  }
+
+  .cafe24-experts-front-sidebar-mobile__left {
+    font-size: 15px;
+  }
+
+  /* 프로젝트 관리 상세 */
+  .cafe24-experts-front-managementDetail {
+    padding:0 24px 0 24px !important;
+    display:block;
+    max-width:initial;
+  }
+
+  .cafe24-experts-front-managementDetail .cafe24-experts-front-sidebar {
+    margin:0 0 50px 0;
+    width:100%;
+  }
+
+  .cafe24-experts-front-managementDetail .cafe24-experts-front-sidebar .cafe24-experts-front-sidebar__title-mobile {
+    display:block;
+    margin: 0 -24px;
+    padding: 0 24px;
+    border-bottom:1px solid #ddd;
+  }
+
+  .cafe24-experts-front-managementDetail .cafe24-experts-front-sidebar .cafe24-experts-front-sidebar__title.cafe24-experts-front-sidebar__projName {
+    font-size: 15px;
+    line-height: 24px;
+    margin: 21px 24px 21px 24px;
+  }
+
+  .cafe24-experts-front-sidebar__title.cafe24-experts-front-sidebar__projName:before {
+    top:5px;
+    left:-19px;
+    width:9px;
+    height:9px;
+  }
+
+  .cafe24-experts-front-managementDetail .cafe24-experts-front-sidebar__client-partner {
+    overflow: visible;
+    max-height:initial;
+    padding:0;
+    display:block;
+  }
+
+  .cafe24-experts-front-managementDetail .cafe24-experts-front-sidebar__client-partner .cafe24-experts-front-sidebar__client-partner-wrap {
+    width:100%;
+    padding: 24px;
+  }
+
+  .cafe24-experts-front-managementDetail .cafe24-experts-front-sidebar .cafe24-experts-front__mState-mobile {
+    margin-top:40px;
+    font-size:16px;
+    line-height: 26px;
+  }
+
+  .cafe24-experts-front-managementDetail .cafe24-experts-front-sidebar .mSelect.cafe24-experts-front__searchArea-select {
+    margin-top:29px;
+    width: 120px !important;
+    min-width: 120px !important;
+  }
+
+  .cafe24-experts-front-managementDetail .cafe24-experts-front-sidebar .mSelect.cafe24-experts-front__searchArea-select .value {
+    font-size:13px;
+    padding: 8px 21px 8px 0;
+    text-align: right;
+  }
+
+  .cafe24-experts-front-managementDetail .cafe24-experts-front-sidebar .mSelect.cafe24-experts-front__searchArea-select .dropdown .option.no-scroll a {
+    font-size:13px;
+    padding: 8px 16px;
+    line-height: 18px;
+  }
+
+  .cafe24-experts-front-sidebar__detail-scroll .cafe24-experts-front-sidebar__detail-wrap .cafe24-experts-front-sidebar__client-partner-wrap .image-holder {
+    top:24px;
+    right:24px;
+  }
+
+  .cafe24-experts-front-sidebar__detail-scroll .cafe24-experts-front-sidebar__detail-wrap .cafe24-experts-front-sidebar__client-partner-wrap .status-profile-name .name {
+    font-size:16px;
+    line-height: 26px;
+    margin-top: 3px;
+  }
+
+  .cafe24-experts-front-sidebar__detail-scroll .cafe24-experts-front-sidebar__detail-wrap .cafe24-experts-front-sidebar__client-partner-wrap .cafe24-experts-front-sidebar__client-breakdown-item .title {
+    font-size:15px;
+    line-height: 24px;
+  }
+  /* //프로젝트 관리 상세 */
+
+  /* 프로젝트 관리 상세 */
+
+  .cafe24-experts-front__myProj .cafe24-experts-front-sidebar {
+    margin-bottom:58px;
+  }
+
+  .cafe24-experts-front__myProj .cafe24-experts-front-sidebar__client-profile {
+    margin:16px 0 0;
+    height:42px;
+  }
+
+  .cafe24-experts-front__myProj .cafe24-experts-front-sidebar__client-profile .cafe24-experts-front-sidebar__client-breakdown .cafe24-experts-front-sidebar__client-breakdown-title {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom:12px;
+  }
+
+  .cafe24-experts-front__myProj .cafe24-experts-front-sidebar__client-breakdown.imgList .cafe24-experts-front-sidebar__text .cafe24-experts-front-sidebar__num {
+    margin:0 0 1px 5px;
+  }
+
+  .cafe24-experts-front__myProj .expanded .cafe24-experts-front-sidebar__client-profile {
+    gap:30px;
+    padding-bottom:50px;
+  }
+
+  .cafe24-experts-front__myProj .expanded .cafe24-experts-front-sidebar__client-profile .cafe24-experts-front-sidebar__client-breakdown .cafe24-experts-front-sidebar__client-breakdown-list {
+    margin:0;
+  }
+
+  .cafe24-experts-front__myProj .expanded .cafe24-experts-front-sidebar__client-breakdown-item {
+    margin-top:14px;
+  }
+
+  .cafe24-experts-front__myProj .expanded .cafe24-experts-front-sidebar__client-breakdown-item:first-child {
+    margin-top:0;
+  }
+
+  .cafe24-experts-front__myProj .cafe24-experts-front-sidebar__client.expanded .total-info-view {
+    bottom:16px;
+  }
+
+  /* //프로젝트 관리 상세 */
+}

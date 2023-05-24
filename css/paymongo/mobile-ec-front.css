@@ -1,0 +1,149 @@
+@media (max-width: 720px) {
+  #pg-paymongo-buyer {
+    width: 100%;
+    max-width: 1140px;
+    height: 111%;
+    margin: 0 auto;
+    background: #FFFFFF;
+  }
+
+  .card-details {
+    background-color: #FFFFFF;
+    padding-left: 36px !important;
+    height: 190px;
+    width: 100%;
+  }
+
+  .card-details .card-name {
+    display: flex;
+    width: 100%;
+  }
+
+  .card-details .card-number {
+    display: flex;
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .card-details .card-expiry {
+    display: flex;
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .card-details .card-name .card-details-label {
+    display: inline-flex;
+    color: #666666;
+    width: 30%;
+    padding-top: 8px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .card-details .card-number .card-details-label {
+    display: inline-flex;
+    padding-top: 8px;
+    color: #666666;
+    width: 30%;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .card-details .card-expiry .card-details-label {
+    display: inline-flex;
+    padding-top: 8px;
+    color: #666666;
+    width: 23%;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .card-details .card-name .card-details-input {
+    border: solid 1px #E3E4E7;
+    padding: 16px;
+    width: 56% !important;
+    height: 40px;
+    display: flex;
+    margin-left: 8px;
+    font-size: 11px;
+  }
+
+  .card-details .card-number .card-details-input {
+    border: solid 1px #E3E4E7;
+    padding: 16px;
+    width: 56% !important;
+    height: 40px;
+    display: flex;
+    margin-left: 8px;
+    font-size: 11px;
+  }
+
+  .card-details .card-expiry .input-month {
+    border: solid 1px #E3E4E7;
+    padding: 16px;
+    width: 17%;
+    height: 40px;
+    display: flex;
+    margin-left: 0 !important;
+    font-size: 11px;
+  }
+
+  .card-details .card-expiry .input-year {
+    border: solid 1px #E3E4E7;
+    padding: 16px;
+    width: 17%;
+    height: 40px;
+    display: flex;
+    margin-left: 8px;
+    font-size: 11px;
+  }
+
+  .card-details .card-expiry .input-cvc {
+    border: solid 1px #E3E4E7;
+    padding: 16px;
+    width: 17.2%;
+    height: 40px;
+    display: flex;
+    justify-content: left;
+    font-size: 11px;
+  }
+
+  .card-expiry .card-expiry-label {
+    display: inline-flex;
+    padding-top: 8px;
+    color: #666666;
+    width: 9.1%;
+    justify-content: center;
+    margin-left: 10px;
+    font-size: 14px;
+  }
+
+  .swal2-html-container {
+    z-index: 1;
+    justify-content: center;
+    margin: 1em 1.6em 0.3em;
+    padding: 0;
+    overflow: auto;
+    color: inherit;
+    font-size: 13px !important;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    word-wrap: break-word;
+    word-break: break-word;
+  }
+
+  .swal2-styled.swal2-confirm {
+    border: 0;
+    border-radius: 0.25em;
+    background: initial;
+    color: #FFFFFF;
+    font-size: 12px !important;
+    width: 65px !important;
+    height: 31px !important;
+  }
+
+  .buyerPaymentPage .portfolio-gnb {
+    display: none;
+  }
+}

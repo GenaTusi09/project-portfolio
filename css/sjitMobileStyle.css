@@ -1,0 +1,31 @@
+.sjit-mockup {
+    display: flex;
+    flex-direction: column;
+    padding-top: 125px;
+    width: 996px;
+}
+
+.sjit-mockup__first-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.sjit-mockup__first-row img {
+    width: 20%;
+    padding-right: 12px;
+}
+
+.sjit-mockup__second-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.sjit-mockup__second-row img {
+    width: 20%;
+    padding: 24px 12px 36px 0;
+    padding-right: 12px;
+}

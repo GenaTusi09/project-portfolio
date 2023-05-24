@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;800&display=swap');
+
+#portfolio-body  {
+    font-family: 'Work Sans', sans-serif;
+    width: 996px;
+    margin: auto;
+    background-color: #FFFFFF;
+    font-weight: 800;
+}
+
+.portfolio-gnb {
+    display: flex;
+    height: 90px;
+    align-items: center;
+    background-color: #FFFFFF;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    width: 996px;
+    z-index: 1000;
+}
+
+.portfolio-gnb__logo {
+    width: 50%;
+    cursor: pointer;
+}
+
+.portfolio-gnb__topnav {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+.portfolio-gnb__topnav a {
+    cursor: pointer;
+    padding-left: 12px;
+    text-decoration: none;
+    color: #1B1E26;
+}
+
+.portfolio-gnb__topnav a:hover {
+    color: rgba(27, 30, 38, 0.70);
+}
+
+.portfolio-hero {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    background-color: #1B1E26;
+    margin-top: 90px;
+}
+
+.portfolio-hero p {
+    font-size: 48px;
+
+}
+
+.portfolio-hero__text {
+    color: #FFFFFF;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-hero__text .portfolio-hero__text-wrap {
+    font-size: 48px;
+}
+
+.portfolio-hero__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.portfolio-hero__img img {
+    width: 300px;
+    height: 300px;
+    border-radius: 180px 90px;
+}
+
+.portfolio-proj-list p {
+    font-size: 26px;
+    margin: 0;
+    padding: 50px 0;
+}
+
+.portfolio-proj-list__card {
+    background: #FFFFFF;
+    border-radius: 30px;
+    display: flex;
+    height: 224px;
+    width: 830px;
+    margin: auto;
+    margin-bottom: 50px;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    cursor: pointer;
+}
+  
+.portfolio-proj-list__card--hover-effect:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card__content-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 34px;
+}
+
+.card__content-left .content-left__title p {
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0;
+    padding: 30px 0 0;
+}
+
+.card__content-left .content-left__description p {
+    margin: 0;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 16px 0;
+    height: 72px;
+}
+
+.card__content-left .content-left__button a {
+    box-sizing: border-box;
+    width: 141px;
+    height: 30px;
+    border: 1px solid #1B1E26;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 6px 33px;
+    border-radius: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #1B1E26;
+}
+
+.card__content-left .content-left__button a:hover {
+    background-color: #1B1E26;
+    color: #FFFFFF;
+}
+
+.card__content-right {
+    width: 50%;
+}
+
+.card__content-right img {
+    width: 100%;
+    height: 224px;
+    border-radius: 0 30px 30px 0;
+}
+
+.card__content-right.sjit-size {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    background-color: #31B66D;
+    border-radius: 0 30px 30px 0;
+
+}
+
+.card__content-right.sjit-size img {
+    width: 50%;
+}
+
+.portfolio-footer {
+    background-color: #1B1E26;
+}
+
+.portfolio-footer p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    height: 50px;
+    margin: 0;
+    font-weight: 400;
+}
+
+.wrapper_about-us .portfolio-gnb {
+    width: 100%;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    padding: 0 125px;
+}
+
+.about-us__wrapper .about-us__header {
+    margin-top: 90px;
+}
+
+.wrapper_faq .portfolio-gnb {
+    width: 100%;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    padding: 0 100px;
+}
+
+.wrapper_faq .experts-wrapper {
+    margin-top: 90px;
+}
+
+.wrapper_faq .portfolio-gnb__topnav {
+    width: 35%;
+}
+
+.theme-body .portfolio-gnb {
+    width: 100%;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    padding: 0 100px;
+}
+
+.theme-body .portfolio-gnb__topnav {
+    width: 35%;
+}
+
+.theme-body .corporation-theme {
+    margin-top: 90px;
+}
+
+.buyerPaymentPage .portfolio-gnb {
+    width: 100%;
+    font-family: 'Work Sans', sans-serif !important;
+    font-weight: 800;
+    padding: 0 100px;
+}
+  
+.buyerPaymentPage .buyer__header {
+    margin-top: 120px;
+}
+
+.theme-body .politics-theme {
+    margin-top: 90px;
+}
+  

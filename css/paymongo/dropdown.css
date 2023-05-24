@@ -1,0 +1,18 @@
+.dropdown {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.dropdown.active .dropdown__list {
+  display: block;
+}
+
+.dropdown.active .dropdown__value-wrapper i {
+  transform: rotate(180deg);
+}
+
+.dropdown .dropdown__list {
+  display: none;
+}

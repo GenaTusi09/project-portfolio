@@ -1,0 +1,41 @@
+:root {
+  --primary-color: #1A72E7;
+  --primary-hover: #2952B8;
+  --secondary-color: #5F8CAA;
+  --title-color: #1B1E26;
+  --white-text: #FFFFFF;
+  --grey-sub-text-color: #666666;
+  --border-grey: #DDDDDD;
+  --error-color: #D70000;
+}
+
+.cafe24-experts-front-sidebar__title,
+.cafe24-experts-front-sidebar__stepper-title,
+.cafe24-experts-front-sidebar__text,
+.cafe24-experts-front-sidebar__filter_text,
+.cafe24-experts-front-sidebar__column-title,
+.cafe24-experts-front-sidebar__depth a,
+.cafe24-experts-front__main-content-title,
+.cafe24-experts-front-next-btn__text,
+.cafe24-experts-front-prev-btn__text,
+.cafe24-experts-front__project-item-title,
+.cafe24-experts-front__proj-information-title,
+.cafe24-experts-front__main-content-project-review-title,
+.cafe24-experts-front__main-content-project-review-edit-link,
+.cafe24-experts-front__project-complete-dialog-main,
+.cafe24-experts-front-budget-schedule-modal__header p,
+.cafe24-experts-front__total-duration,
+.cafe24-experts-front-budget-schedule-modal__modal-title,
+.cafe24-experts-front__budget-total-label-right,
+.cafe24-experts-front-sidebar-step__name,
+.cafe24-experts-front-sidebar-mobile__left,
+.cafe24-experts-front-page-title-mobile,
+.cafe24-experts-front-sidebar-mobile__left-title,
+.cafe24-experts-front-button,
+.cafe24-experts-front-import-modal__main-title,
+.cafe24-experts-front-cards-img__main-text,
+.cafe24-experts-front__materials-disclose-title,
+.cafe24-experts-front__project-review-type,
+.cafe24-experts-front-budget-schedule-modal__total-duration {
+  font-weight: 700;
+}
